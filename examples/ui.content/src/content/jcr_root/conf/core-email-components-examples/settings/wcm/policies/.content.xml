@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Default Container"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:Core E-Mail Components Examples]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </default>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
+    <core-email-components-examples jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <image jcr:primaryType="nt:unstructured">
+                <default
+                    jcr:lastModified="{Date}2022-06-02T11:40:41.257+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Default Image"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    altValueFromDAM="true"
+                    defaultWidth="1280"
+                    displayPopupTitle="true"
+                    isDecorative="false"
+                    titleValueFromDAM="true">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </default>
+            </image>
+            <page jcr:primaryType="nt:unstructured">
+                <default
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Default Page"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    appResourcesClientlib="cmp-email-examples.site"
+                    clientlibs="cmp-email-examples.base">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </default>
+            </page>
+            <segmentation jcr:primaryType="nt:unstructured">
+                <default
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Default Segmentation"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:Core E-Mail Components Examples">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <definedConditions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            condition="person.gender = female"
+                            name="Female"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            condition="person.gender = male"
+                            name="Male"/>
+                    </definedConditions>
+                </default>
+            </segmentation>
+        </components>
+    </core-email-components-examples>
+</jcr:root>

@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Hello</title>
+    <style type="text/css">
+        p {
+            color: red
+        }
+        p>:first-child:before {
+            content: '!';
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            color: green;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            a:hover {
+                color: yellow;
+            }
+
+            p {
+                color: blue;
+            }
+            .foo, .bar {
+                color: red;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass > center > table {
+            width: 640px;
+        }
+
+        td.ExternalClass {
+            width: 640px;
+        }
+
+        .ExternalClass.OtherExternalClass {
+            width: 640px;
+        }
+
+        td.ExternalClassSpecial {
+            width: 640px;
+        }
+
+
+    </style>
+    <!--[if mso]>
+    <style>.hide-mso {
+        display: none;
+    }
+    </style><![endif]-->
+</head>
+<body>
+<a href="#">Hello</a>
+<p><span>Hello</span></p>
+</body>
+</html>
